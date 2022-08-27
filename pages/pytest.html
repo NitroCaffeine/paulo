@@ -11,11 +11,11 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="../css/index.css" />
     <title>Flask</title>
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container-fluid container-base">
       <div class="row row-container">
         <div class="col">
           <div class="row">
@@ -33,6 +33,21 @@
             <div class="row r-content">
               <main>
                 <div>
+                    <h4>Pytest</h4>
+                    <p>Pytest é um framework de teste para Python.</p>
+                    <p>Para instalar é só fazer o comando <code>pip install pytest</code>.</p>
+                    <p>Ao executar o comando pytest, ele procurará os arquivos que começam com test_*.py e executará os testes que respeitem essa nomenclatura. </p>
+                    <h4>Tutorial Pytest</h4>
+                    <p>Os testes do pytest devem ter sempre um <code>assert</code> seguido pela função que será testada.</p>
+                    <code><pre>
+                            def soma(a,b):
+                                return a+b
+
+                            def test_soma():
+                                assert soma(1, 2) == 3   
+                    </pre>
+                </code>
+                <p> Ao terminar a execução o pytest informa os testes que foram um sucesso, os que falharam e a linha onde o erro ocorreu.</p>
                   
                 </div>
               </main>
@@ -44,13 +59,7 @@
             <p>
               Referências bibliográficas:
               <a href="https://pt.wikipedia.org/wiki/Jinja_(mecanismo_de_template)"
-                >Jinja</a
-              >
-              <a href="https://pt.wikipedia.org/wiki/Flask_(framework_web)"
-                >Flask</a
-              >
-              <a href="https://pt.wikipedia.org/wiki/Web_Server_Gateway_Interface"
-                >WSGI</a
+                >Pytest</a
               >
             </p>
           </div>
