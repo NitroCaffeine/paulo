@@ -48,6 +48,11 @@
                     </pre>
                 </code>
                 <p> Ao terminar a execução o pytest informa os testes que foram um sucesso, os que falharam e a linha onde o erro ocorreu.</p>
+                <h4>Fixtures</h4>
+                <p>Com o decorador <code>@pytest.fixtures</code> é possível escrever uma função que pode ser reaproveitada por vários testes.</p>
+                <h4>Escopos</h4>
+                <p>Existem cinco escopos de fixtures diferentes no pytest: função, classe, módulo, pacote e sessão</p>
+                <p>Os escopos permitem que o usuário defina quando uma fixture deve ser chamada. O escopo padrão de uma fixture é de função, ou seja é chamado toda vez que uma função com fixture é executada. No caso de uma fixture com o escopo de classe é chamada uma vez a cada teste de classe e assim sucessivammente.</p>
                   
                 </div>
               </main>
@@ -58,7 +63,7 @@
           <div class="container-fluid c-footer">
             <p>
               Referências bibliográficas:
-              <a href="https://pt.wikipedia.org/wiki/Jinja_(mecanismo_de_template)"
+              <a href="https://en.wikipedia.org/wiki/Pytest"
                 >Pytest</a
               >
             </p>
