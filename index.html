@@ -1,56 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/index.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/index.css" />
     <title>Flask</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container-fluid">
-        <div class="row row-container">
-            <div class="col">
-                <div class="row">
-                    <nav class="navbar  navbar-dark bg-dark">
-                        <div class="container-fluid">
-                            <div class="col">
-                                <a class="navbar-brand" href="index.html">Flask</a>
-                                <a class="navbar-brand" href="pages/git.html">Git e Github</a>
-                                <a class="navbar-brand" href="pages/pytest.html">Pytest</a>
-                            </div>
-                        </div>
-                      </nav>
+      <div class="row row-container">
+        <div class="col">
+          <div class="row">
+            <nav class="navbar navbar-dark bg-dark">
+              <div class="container-fluid">
+                <div class="col">
+                  <a class="navbar-brand" href="index.html">Flask</a>
+                  <a class="navbar-brand" href="pages/git.html">Git e Github</a>
+                  <a class="navbar-brand" href="pages/pytest.html">Pytest</a>
                 </div>
-                <div class="container mt-4">
-                    <div class="row">
-                        <main>
-                        
-                        <div>
-                        <h4>O que é o Flask?</h4>
-                        <p>Flask é um micro framework que utiliza a linguagem Python para criar aplicativos Web.</p><br>
-                        <p>Não se deixe enganar pelo prefixo “micro”,  em algumas extensões o Flask é poderoso e ideal para quem busca:</p><br>
-                        <ul>
-                            <li>Simplicidade;</li>
-                            <li>Rapidez;</li>
-                            <li>Soluções para projetos pequenos;</li>
-                            <li>Aplicações robustas.</li>
-                        </ul>
-                    </div>
-                    </main>
-                    </div>
-
+              </div>
+            </nav>
+          </div>
+          <div class="container mt-4 content">
+            <div class="row r-content">
+              <main>
+                <div>
+                  <h4>O que é o Flask?</h4>
+                  <p>
+                    Flask é um micro framework que utiliza a linguagem Python
+                    para criar aplicativos web.
+                  </p>
+                  <p>O Flask é ideal para quem busca simplicidade, no entanto ainda é uma poderosa ferramenta para o desenvolvimento de aplicações web. </p>
+                  <ul>
+                    <li>Simplicidade;</li>
+                    <li>Velocidade;</li>
+                    <li>Ótima escolha para projetos pequenos;</li>
+                    <li>Ótima escolha para aplicações grandes.</li>
+                  </ul>
+                  <p>
+                    O Flask foi desenvolvido Armin Ronacher e foi lançado em 2010
+                  </p>
+                  <p>
+                    O Flask é baseado nos projetos Pocoo, Werkzeug e Jinja2.
+                  </p>
+                  <h4>WSGI</h4>
+                  <p>
+                    A Web Server Gateway Interface (Web Server Gateway
+                    Interface, WSGI) é uma interface comum entre
+                    servidores e aplicativos da web em Python.
+                  </p>
+                  <h4>Werkzeug</h4>
+                  <p>
+                    O Werkzeug é um kit de ferramentas
+                    WSGI que realiza request e response.
+                  </p>
+                  <h4>Jinja2</h4>
+                  <p>
+                    O Jinja2 é um sistema  template que possibilita o chamado de funções com argumentos em objeto. O que permite que a passagem de variáveis para o template.                                            
+                  </p>
+                  <pre>
+                        &lt;h1&gt;Hello {{ username }}&lt;/h1&gt;  
+                  </pre>
+                  <h4>Tutorial</h4>
+                  <p>Primariamente deve-se criar uma pasta e dentro dela criar um ambiente virtual utilizando o comando <code>python3 -m venv venv</code></p>
+                  <p>Em seguida deve-se ativar esse ambiente com o comando <code>source venv/Scripts/activate</code>(no bash) ou <code>venv/Scripts/activate</code>(no powershell)</p>
+                  <p>Com o ambiente virtual ativado utiliza-se o pip (instalador de pacotes do python) para instalar o Flask com o comando <code>pip install Flask</code>. Com isso o ambiente ja está configurado para aplicações Flask.</p>
+                  <h4>Exemplo de aplicação Flask:</h4>
+                  <code><pre>
+                    from flask import Flask
+                    app = Flask(__name__)
+                    
+                    @app.route("/")
+                    def hello():
+                        return "Olá mundo!"
+                    
+                    if __name__ == "__main__":
+                         app.run()</pre></code>
                 </div>
+              </main>
             </div>
-           
+          </div>
         </div>
         <footer>
-            <div class="container-fluid">
-                <p>Referências bibliográficas: https://blog.geekhunter.com.br/flask-framework-python/</p>
-            </div>
+          <div class="container-fluid c-footer">
+            <p>
+              Referências bibliográficas:
+              <a href="https://pt.wikipedia.org/wiki/Jinja_(mecanismo_de_template)"
+                >Jinja</a
+              >
+              <a href="https://pt.wikipedia.org/wiki/Flask_(framework_web)"
+                >Flask</a
+              >
+              <a href="https://pt.wikipedia.org/wiki/Web_Server_Gateway_Interface"
+                >WSGI</a
+              >
+            </p>
+          </div>
         </footer>
+      </div>
     </div>
-</body>
+  </body>
 </html>

@@ -2,12 +2,16 @@ body{
     height: 100vh;
 }
 
+.r-content{
+    overflow-y: auto;
+}
+
 .container-fluid, .row-container{
+   
     height: 100%;
 }
 
 footer{
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -25,6 +29,18 @@ main{
     justify-content: center;
 }
 
+.c-footer{
+    padding-top: 1rem;
+}
+
+pre{
+    font-size: medium;
+}
+
 nav{
     height: 60px;
+}
+
+.navbar-brand:hover{
+    color: #ab2869
 }
