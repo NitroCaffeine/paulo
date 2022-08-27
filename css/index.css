@@ -1,0 +1,21 @@
+body{
+    height: 100vh;
+}
+
+.container-fluid, .row-container{
+    height: 100%;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+nav{
+    height: 60px;
+}
