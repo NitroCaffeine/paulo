@@ -16,6 +16,15 @@ footer{
     
 }
 
+p, h4{
+    padding: 0;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
 nav{
     height: 60px;
 }
